@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<link rel="stylesheet" href="CSS/style.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+</head>
+<body>
+	
+
+
+
+<section class="">
+  <div class="container">
+    <div class="row">
+
+     	<div class="col-md-12">
+			<div id="slider_container" class="owl-carousel owl-theme">
+			    <div>
+			        <img src="img/01.jpg" alt="Image 1">
+			    </div>
+			    <div>
+			        <img src="img/02.jpg" alt="Image 2">
+			    </div>
+			    <div>
+			        <img src="img/03.jpg" alt="Image 3">
+			    </div>
+			</div>
+      	</div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+$(function() {
+  // Owl Carousel
+  var owl = $(".owl-carousel");
+  owl.owlCarousel({
+  
+// Most important owl features
+
+
+  items: 1,
+    margin: 10,
+    loop: true,
+    nav: true,
+    navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+    //navText: true;
+    autoplay:true, //Автозапуск слайдера
+ 	autoplayHoverPause: true,
+    
+
+    smartSpeed:1000, //Время движения слайда
+    dots: true,
+
+responsiveClass:true,
+    responsive:{
+        0:{
+            items:0,
+            nav:true
+        },
+        991:{
+            items:1,
+            nav:true
+        },
+    }
+
+/*responsive: {
+            0:{
+              nav:false
+            },
+            768: {
+              nav: true
+            }
+        }
+*/
+
+  });
+});
+</script>
+
+</body>
+</html>
+
+<!--
+<section class="">
+  <div class="container">
+    <div class="row">
+     	<div class="col-lg-12">
+			<div id="slider_container" class="owl-carousel owl-theme">
+			    <div>
+			        <img src="../local/templates/beautyimage/images/static_page/index/01.jpg" alt="Image 1">
+			    </div>
+			    <div>
+			        <img src="../local/templates/beautyimage/images/static_page/index/02.jpg" alt="Image 2">
+			    </div>
+			    <div>
+			        <img src="../local/templates/beautyimage/images/static_page/index/03.jpg" alt="Image 3">
+			    </div>
+			</div>
+      	</div>
+
+    </div>
+  </div>
+</section>
+-->
